@@ -14,3 +14,5 @@ Face recognition for attendance
 ## Installing other packages
 1. use pip install scikit-learn to install the library
 2. install pandas
+
+Use python app.py or flask run to run the project.

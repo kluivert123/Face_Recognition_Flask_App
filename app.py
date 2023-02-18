@@ -20,8 +20,7 @@ def datetoday2():
 
 
 #### Initializing VideoCapture object to access WebCam
-#face_detector = cv2.CascadeClassifier('./static/haarcascade_frontalface_default.xml')
-face_detector = cv2.CascadeClassifier(r"F:\New folder\Bene\FaceRecognition\Face_Recognition_Flask_App\haarcascade_frontalface_default.xml")
+face_detector = cv2.CascadeClassifier("static/haarcascade_frontalface_default.xml")
 cap = cv2.VideoCapture(0)
 
 
@@ -43,7 +42,7 @@ def totalreg():
 #### extract the face from an image
 def extract_faces(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    face_points = face_detector.detectMultiScale(gray, 1.1, 4)
+    face_points = face_detector.detectMultiScale(gray, 1.3, 5)
     return face_points
 
 
